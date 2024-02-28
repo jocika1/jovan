@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header .header-wrap {
+  width: 80%;
+}
+header .header-wrap #logo {
+  width: 30px;
+}/*# sourceMappingURL=main.css.map */
