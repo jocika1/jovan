@@ -1,11 +1,365 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-header .header-wrap {
-  width: 80%;
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 95px;
+  background-color: #EEEEEE;
 }
-header .header-wrap #logo {
-  width: 30px;
+.header-wrap #logo a img {
+  width: 100px;
+  margin-left: 40px;
+}
+.header-wrap nav ul {
+  list-style-type: none;
+  margin-right: 60px;
+}
+.header-wrap nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.header-wrap nav ul li a {
+  text-decoration: none;
+  font-size: 1.17rem;
+  color: #000000;
+  transition: all ease-in-out 0.3s;
+}
+.header-wrap nav ul li a:hover {
+  color: #3399ff;
+}
+
+#pozadina {
+  background-image: url(../img/molim2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+#pozadina .wrapper {
+  margin-left: 50px;
+}
+#pozadina .wrapper h1 {
+  font-size: 3, 5rem;
+  color: #3399ff;
+}
+#pozadina .wrapper p {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#about-me {
+  margin-top: 25px;
+}
+#about-me h2 {
+  text-align: center;
+  font-size: 2.1rem;
+}
+#about-me #about-me-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#about-me #about-me-wrap div {
+  width: 24%;
+}
+#about-me #about-me-wrap #about-slika {
+  width: 17%;
+}
+#about-me #about-me-wrap #about-slika img {
+  width: 100%;
+  border-radius: 9px;
+}
+#about-me #about-me-wrap #biografija {
+  text-align: center;
+  padding-bottom: 13px;
+}
+#about-me #about-me-wrap #biografija h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: #3399ff;
+  border-bottom: solid 3px #0d3980;
+}
+#about-me #about-me-wrap #biografija p {
+  font-size: 1.3rem;
+}
+#about-me #about-me-wrap #licni-podaci {
+  text-align: center;
+  margin-top: 25px;
+}
+#about-me #about-me-wrap #licni-podaci h3 {
+  font-size: 1.6rem;
+  padding-top: 40px;
+  margin-bottom: 15px;
+  color: #3399ff;
+  border-bottom: solid 3px #0d3980;
+}
+#about-me #about-me-wrap #licni-podaci p {
+  padding-bottom: 15px;
+}
+
+#services {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #2E2E2E;
+  padding: 20px 0px 30px 0px;
+}
+#services h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+#services #services-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+#services #services-wrap .services-blok {
+  text-align: center;
+}
+#services h6 {
+  font-size: 1.6rem;
+}
+#services p {
+  font-size: 1rem;
+}
+#services i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#skills .skills-wrap {
+  width: 70%;
+  margin: 0px auto;
+}
+#skills .skills-wrap .skill .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#skills .skills-wrap .skill .range {
+  height: 15px;
+  background-color: #000000;
+  width: 100%;
+}
+#skills .skills-wrap .skill .range .procenat1 {
+  height: 100%;
+  width: 80%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat2 {
+  height: 100%;
+  width: 70%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat3 {
+  height: 100%;
+  width: 50%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat4 {
+  height: 100%;
+  width: 50%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat5 {
+  height: 100%;
+  width: 60%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat6 {
+  height: 100%;
+  width: 50%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat7 {
+  height: 100%;
+  width: 50%;
+  background-color: #B7BEDB;
+}
+#skills .skills-wrap .skill .range .procenat8 {
+  height: 100%;
+  width: 30%;
+  background-color: #B7BEDB;
+}
+#skills h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 20px;
+}
+#skills p {
+  font-size: 25px;
+}
+
+#projects {
+  background-color: #2E2E2E;
+  margin-top: 30px;
+}
+#projects #my-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  width: 80%;
+  margin-top: 15px;
+  padding: 50px 0px;
+}
+#projects #my-projects .project {
+  width: 40%;
+}
+#projects #my-projects .project img {
+  width: 100%;
+  border-radius: 10px;
+  transition: ease-in-out all 0.3s;
+}
+#projects #my-projects .project img:hover {
+  scale: 1.1;
+  box-shadow: -10px 10px 5px #000000;
+}
+#projects #my-projects .project2 {
+  width: 40%;
+}
+#projects #my-projects .project2 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: ease-in-out all 0.3s;
+}
+#projects #my-projects .project2 img:hover {
+  scale: 1.1;
+  box-shadow: -10px 10px 5px #000000;
+}
+#projects h2 {
+  font-size: 2.1rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: solid 3px #0d3980;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 10px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+#Contact {
+  padding: 60px;
+  background-color: #ffffff;
+}
+#Contact h2 {
+  color: #000000;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#Contact .contact-wrap {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Contact .contact-wrap #contact-soc {
+  text-align: center;
+}
+#Contact .contact-wrap #contact-soc h2 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  border-bottom: solid 3px #0d3980;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0px auto;
+  margin-bottom: 25px;
+}
+#Contact .contact-wrap #contact-soc nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#Contact .contact-wrap #contact-soc nav ul #socials {
+  display: flex;
+  justify-content: center;
+}
+#Contact .contact-wrap #contact-soc nav ul #socials li {
+  margin: 0 10px;
+}
+#Contact .contact-wrap #contact-soc nav ul #socials li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#Contact .contact-wrap #contact-soc nav ul #socials li a:hover {
+  color: #3399ff;
+}
+#Contact .contact-wrap #contact-soc nav ul #socials li a i {
+  font-size: 29px;
+}
+#Contact .contact-wrap #contact-soc p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+#Contact #contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+#Contact #contact-form input[type=text],
+#Contact #contact-form input[type=email],
+#Contact #contact-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#Contact #contact-form input[type=submit] {
+  width: 100%;
+  background-color: #0d3980;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#Contact #contact-form input[type=submit]:hover {
+  background-color: #3399ff;
+}
+
+footer {
+  height: 100px;
+  background-color: #2E2E2E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .wrap-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  margin: 0px auto;
+  font-size: 1.2rem;
+}
+footer .wrap-footer div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */

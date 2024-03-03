@@ -1,0 +1,163 @@
+@media (max-width: 1285px){
+    #about-me #about-me-wrap #licni-podaci{
+        padding-bottom: 55px;
+    }
+}
+@media(max-width: 1245px){
+    #services #services-wrap{
+        flex-wrap: wrap;
+    }
+    #services #services-wrap .services-blok{
+        width: 45%;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 1115px){
+    #projects #my-projects{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #projects #my-projects .project, #projects #my-projects .project2{
+        width: 80%;
+        margin-top: 20px;
+    }
+    #about-me #about-me-wrap{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    #about-me #about-me-wrap #biografija{
+        width: 50%;
+    }
+    #about-me #about-me-wrap #about-slika{
+        width: 40%;
+    } 
+    #about-me #about-me-wrap #licni-podaci{
+        width: 50%;
+    }
+    #about-me #about-me-wrap #licni-podaci h4{
+        font-size: 24px;
+    }
+    #about-me #about-me-wrap #licni-podaci p{
+        font-size: 21px;
+    }
+    #about-me #about-me-wrap #licni-podaci h3{
+        font-size: 30px;
+    }
+    #about-me #about-me-wrap #biografija h3{
+        font-size: 30px;
+    }
+    #about-me #about-me-wrap #biografija{
+        padding-bottom: 40px;
+    }
+}
+@media(max-width: 740px){
+.header-wrap{
+    flex-direction: column;
+    height: max-content;
+    padding: 10px 0px;
+    }
+    .header-wrap #logo a img{
+        margin: 0px auto;
+    }    
+    .header-wrap nav ul{
+   margin: 0px auto;
+    }
+    #Contact .contact-wrap{
+        flex-direction: column;
+    }
+    #Contact .contact-wrap #contact-soc {
+        margin-top: 30px;
+    }
+}
+@media(max-width: 724px){
+    #about-me #about-me-wrap #licni-podaci h3{
+        font-size: 22px;
+    }
+    #about-me #about-me-wrap #licni-podaci h4{
+        font-size: 19px;
+    }
+    #about-me #about-me-wrap #licni-podaci p{
+        font-size: 18px;
+    }
+    #about-me #about-me-wrap #biografija h3{
+        font-size: 22px;
+    }
+    #about-me #about-me-wrap #biografija p{
+        font-size: 18px;
+    }
+}
+@media(max-width: 650px){
+    #pozadina .wrapper p {
+        font-size: 25px;
+    }
+}
+@media(max-width: 613px){
+    #about-me #about-me-wrap #licni-podaci {
+        width: 70%;
+    }
+    #about-me #about-me-wrap #biografija {
+        width: 70%;
+    }
+    #about-me #about-me-wrap #about-slika {
+        width: 70%;
+    }
+}
+@media(max-width: 539px){
+    .header-wrap nav ul li a {
+       font-size: 16px;
+    }
+}
+@media(max-width: 497px){
+    .header-wrap nav ul li a {
+       font-size: 15px;
+    }
+}
+@media(max-width: 480px){
+    #pozadina .wrapper p {
+        font-size: 22px;
+    }
+}
+@media(max-width: 462px){
+    .header-wrap nav ul li a {
+       font-size: 14px;
+    }
+}
+@media(max-width: 440px){
+    .header-wrap nav ul li a {
+       font-size: 13px;
+    }
+}
+@media(max-width: 439px){
+    footer .wrap-footer p{
+        font-size: 15px;
+    }
+    footer .wrap-footer div a{
+        font-size: 15px;
+    }
+}
+@media(max-width: 430px){
+    #services #services-wrap{
+        flex-direction: column;
+    }
+        #services #services-wrap .services-blok{
+            width: 80%;
+    }
+}
+@media(max-width: 414px){
+    .header-wrap nav ul li a {
+       font-size: 12px;
+    }
+}
+@media(max-width: 411px){
+    #pozadina .wrapper p {
+        font-size: 20px;
+    }
+    #pozadina .wrapper h1{
+        font-size: 25px;
+    }
+}
+@media(max-width: 395px){
+    .header-wrap nav ul li a {
+       font-size: 11px;
+    }
+}

@@ -1,15 +1,385 @@
-/////MIXINI/////
+//MIXINI//
+$crna:#000000;
+$bela:#ffffff;
+$siva:#EEEEEE;
+$baby-blue:#0d3980;
+$plava:#3399ff;
+$tamno-siva:#2E2E2E;
+$ljubicasta: #B7BEDB;
 
+
+@mixin nav{
+    text-decoration: none;
+    font-size: 1.17rem;
+    color: $crna;
+}
+
+@mixin flexbox ($pozicioniranje:space-between){
+    display: flex;
+    justify-content: $pozicioniranje;
+    align-items: center;
+}
+
+@mixin background{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+//MIXINI//
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
-header{
-    .header-wrap{
-        width: 80%;
-    
-        #logo{
-            width: 30px;
+//HEADER//
+.header-wrap {
+    @include flexbox;
+    width: 100%;
+    height: 95px;
+    background-color: $siva;
+    #logo {
+        
+        a {
+          
+            img {
+                width: 100px;
+                margin-left: 40px;
+            }
         }
+    }
+    nav {
+        ul {
+            list-style-type: none; 
+            margin-right: 60px;
+            li {
+                display: inline-block; 
+                margin-right: 20px; 
+                a {
+                    @include nav;
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        color: $plava; 
+                    }
+                }
+            }
+        }
+    }
+}
+//END OF HEADER//
+//MAIN//
+#pozadina{
+    background-image: url(../img/molim2.jpg);
+   @include background;
+   @include flexbox;
+   height: 600px;
+    .wrapper{
+        margin-left: 50px;
+        h1{
+            font-size: 3,5rem;
+            color: $plava;
+        }
+        p{
+            font-size: 30px;
+            color: $bela;
+        }
+    }
+}
+//ABOUT ME//
+#about-me{
+    margin-top: 25px;
+    h2{
+        text-align: center;
+        font-size: 2.1rem;
+    }
+    #about-me-wrap{
+        @include flexbox;
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 20px;
+        div{
+            width: 24%;
+        }
+        #about-slika{
+            width: 17%;
+            img{
+                width: 100%;
+                border-radius: 9px;
+            }
+        }
+        #biografija{
+            text-align: center;
+            padding-bottom: 13px;
+            h3{
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                color: $plava;
+                border-bottom: solid 3px $baby-blue;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        #licni-podaci{
+            text-align: center;
+            margin-top: 25px;
+            h3{
+                font-size: 1.6rem;
+                padding-top: 40px;
+                margin-bottom: 15px;
+                color: $plava;
+                border-bottom: solid 3px $baby-blue;
+            }
+            p{
+                padding-bottom: 15px;
+            }
+           
+        }
+    }
+}
+//END OF ABOUT ME//
+//SERVICES//
+#services{
+    text-align: center;
+    margin-top: 20px;
+    background-color: $tamno-siva;
+    padding: 20px 0px 30px 0px;
+    h2{
+        font-size: 2rem;
+        color: $bela;
+        margin-bottom: 25px;
+    }
+    #services-wrap{
+        width: 100%;
+        @include flexbox(space-around);
+        color: $bela;
+        .services-blok{
+            text-align: center;
+        }
+    }
+    h6{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    i{
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+//END OF SERVICES//
+//SKILLS//
+#skills{
+    .skills-wrap{
+        width: 70%;
+        margin: 0px auto;
+        .skill{
+            .info{
+                @include flexbox;
+            }
+            .range{
+                height: 15px;
+                background-color: $crna;
+                width: 100%;
+                .procenat1{
+                    height: 100%;
+                    width: 80%;
+                    background-color: $ljubicasta;
+                }
+                .procenat2{
+                    height: 100%;
+                    width: 70%;
+                    background-color: $ljubicasta;
+                }
+                .procenat3{
+                    height: 100%;
+                    width: 50%;
+                    background-color: $ljubicasta;
+                }
+                .procenat4{
+                    height: 100%;
+                    width: 50%;
+                    background-color: $ljubicasta;
+                }
+                .procenat5{
+                    height: 100%;
+                    width: 60%;
+                    background-color: $ljubicasta;
+                }
+                .procenat6{
+                    height: 100%;
+                    width: 50%;
+                    background-color: $ljubicasta;
+                }
+                .procenat7{
+                    height: 100%;
+                    width: 50%;
+                    background-color: $ljubicasta;
+                }
+                .procenat8{
+                    height: 100%;
+                    width: 30%;
+                    background-color: $ljubicasta;
+                }
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        font-size: 2.2rem;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+//END OF SKILLS//
+//PROJECTS//
+#projects{
+    background-color: $tamno-siva;
+    margin-top: 30px;
+    #my-projects{
+        @include flexbox;
+        margin: 0px auto;
+        width: 80%;
+        margin-top: 15px;
+        padding: 50px 0px;
+        .project{
+            width: 40%;
+            img {width: 100%; border-radius: 10px; transition: ease-in-out all 0.3s;  &:hover{ scale:1.1; box-shadow: -10px 10px 5px $crna;}}
+        }
+        .project2{
+            width: 40%;
+            img {width: 100%; border-radius: 10px; transition: ease-in-out all 0.3s; &:hover{ scale:1.1; box-shadow: -10px 10px 5px $crna;}}
+        }
+    }
+    h2{
+        font-size: 2.1rem;
+        margin-top: 20px;
+        text-align: center;
+        color: $bela;
+        border-bottom: solid 3px $baby-blue;
+        width: max-content;
+        padding: 0px 10px;
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+}
+//END OF PROJECTS//
+//CONTACT//
+#Contact {
+    padding: 60px;
+    background-color: $bela;
+   h2 {
+    color: $crna;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact-wrap {
+    max-width: 100%;
+    @include flexbox;
+    #contact-soc {
+        text-align: center;
+    
+        h2 {
+            font-size: 2.1rem;
+            margin-bottom: 20px;
+            border-bottom: solid 3px $baby-blue;
+            width: max-content;
+            margin: 0px auto;
+            margin-bottom: 25px;
+        }
+    
+        nav {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+    
+                #socials {
+                    display: flex;
+                    justify-content: center;
+    
+                    li {
+                        margin: 0 10px;
+    
+                        a {
+                            color: $tamno-siva;
+                            text-decoration: none;
+                            transition: color 0.3s ease;
+    
+                            &:hover {
+                                color: $plava;
+                            }
+    
+                            i {
+                                font-size: 29px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+    
+  }
+  #contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    
+  }
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  #contact-form input[type="submit"] {
+    width: 100%;
+    background-color: $baby-blue;
+    color: $bela;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact-form input[type="submit"]:hover {
+    background-color: $plava;
+  }
+}
+footer{
+    height: 100px;
+    background-color: $tamno-siva;
+        @include flexbox;
+    .wrap-footer{
+    @include flexbox;
+         text-align: center;
+         color: $bela;
+         width: 80%;
+         margin: 0px auto;
+         font-size: 1.2rem;
+         div{
+            a{
+                text-decoration: none;
+                color: $bela;
+                font-size: 1.2rem;
+            }
+         }
     }
 }
